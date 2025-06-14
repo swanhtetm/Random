@@ -1,0 +1,546 @@
+local Intro = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local Outlines = Instance.new("ImageLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local Holder = Instance.new("Frame")
+local UIGradient_3 = Instance.new("UIGradient")
+local Title = Instance.new("TextLabel")
+local Desc = Instance.new("TextLabel")
+local ProgressBar = Instance.new("Frame")
+local Bar = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local Creator = Instance.new("TextLabel")
+local UIGradient_4 = Instance.new("UIGradient")
+local Version = Instance.new("TextLabel")
+local UIGradient_5 = Instance.new("UIGradient")
+
+-- Properties:
+
+Intro.Name = "Intro"
+Intro.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Intro.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = Intro
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Main.BorderSizePixel = 0
+Main.ClipsDescendants = true
+Main.Position = UDim2.new(0.5, -175, 0.5, -100)
+Main.Size = UDim2.new(0, 350, 0, 200)
+
+UIGradient.Rotation = -30
+UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)}
+UIGradient.Parent = Main
+
+Outlines.Name = "Outlines"
+Outlines.Parent = Main
+Outlines.BackgroundTransparency = 1
+Outlines.Position = UDim2.new(0, -5, 0, -5)
+Outlines.Size = UDim2.new(1, 10, 1, 10)
+Outlines.Image = "rbxassetid://1427967925"
+Outlines.ScaleType = Enum.ScaleType.Slice
+Outlines.SliceCenter = Rect.new(6, 6, 25, 25)
+Outlines.TileSize = UDim2.new(0, 20, 0, 20)
+
+UIGradient_2.Rotation = -30
+UIGradient_2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)}
+UIGradient_2.Parent = Outlines
+
+Holder.Name = "Holder"
+Holder.Parent = Main
+Holder.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Holder.BorderSizePixel = 0
+Holder.ClipsDescendants = true
+Holder.Size = UDim2.new(1, 0, 1, 0)
+
+UIGradient_3.Rotation = 30
+UIGradient_3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(0.6, 0), NumberSequenceKeypoint.new(0.61, 1), NumberSequenceKeypoint.new(1, 1)}
+UIGradient_3.Parent = Holder
+
+Title.Name = "Title"
+Title.Parent = Holder
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0, 60, 0, 15)
+Title.Size = UDim2.new(0, 100, 0, 50)
+Title.Font = Enum.Font.SourceSansBold
+Title.Text = "Secret Service Panel Nigger"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 25
+
+Desc.Name = "Desc"
+Desc.Parent = Holder
+Desc.BackgroundTransparency = 1
+Desc.Position = UDim2.new(0, 20, 0, 60)
+Desc.Size = UDim2.new(0, 180, 0, 25)
+Desc.Font = Enum.Font.SourceSans
+Desc.Text = "Nigger remade ssp team nigger "
+Desc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Desc.TextSize = 18
+
+ProgressBar.Name = "ProgressBar"
+ProgressBar.Parent = Holder
+ProgressBar.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+ProgressBar.BorderSizePixel = 0
+ProgressBar.Position = UDim2.new(0, 60, 0, 145)
+ProgressBar.Size = UDim2.new(0, 100, 0, 4)
+
+Bar.Name = "Bar"
+Bar.Parent = ProgressBar
+Bar.BackgroundColor3 = Color3.fromRGB(61, 143, 220)
+Bar.BorderSizePixel = 0
+Bar.Size = UDim2.new(0, 0, 1, 0)
+
+ImageLabel.Parent = ProgressBar
+ImageLabel.BackgroundTransparency = 1
+ImageLabel.Size = UDim2.new(1, 0, 1, 0)
+ImageLabel.Image = "rbxassetid://2764171053"
+ImageLabel.ImageColor3 = Color3.fromRGB(45, 45, 45)
+ImageLabel.ImageTransparency = 1
+ImageLabel.ScaleType = Enum.ScaleType.Slice
+ImageLabel.SliceCenter = Rect.new(2, 2, 254, 254)
+
+Creator.Name = "Creator"
+Creator.Parent = Main
+Creator.BackgroundTransparency = 1
+Creator.Position = UDim2.new(1, -110, 1, -20)
+Creator.Size = UDim2.new(0, 105, 0, 20)
+Creator.Font = Enum.Font.SourceSans
+Creator.Text = "nigger Edition"
+Creator.TextColor3 = Color3.fromRGB(255, 255, 255)
+Creator.TextSize = 14
+Creator.TextTransparency = 0
+Creator.TextXAlignment = Enum.TextXAlignment.Right
+
+UIGradient_4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)}
+UIGradient_4.Parent = Creator
+
+Version.Name = "Version"
+Version.Parent = Main
+Version.BackgroundTransparency = 1
+Version.Position = UDim2.new(1, -110, 1, -35)
+Version.Size = UDim2.new(0, 105, 0, 20)
+Version.Font = Enum.Font.SourceSans
+Version.Text = "V2.Z"
+Version.TextColor3 = Color3.fromRGB(255, 255, 255)
+Version.TextSize = 14
+Version.TextTransparency = 0
+Version.TextXAlignment = Enum.TextXAlignment.Right
+
+UIGradient_5.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)}
+UIGradient_5.Parent = Version
+
+-- Scripts:
+
+local TweenService = game:GetService("TweenService")
+local RunService = game:GetService("RunService")
+
+-- Intro animation
+TweenService:Create(Main, TweenInfo.new(0.1, Enum.EasingStyle.Linear), {Size = UDim2.new(0, 350, 0, 200)}):Play()
+task.wait(4)
+
+local function tweenNumber(n, ti, func)
+	local tweenVal = Instance.new("IntValue")
+	tweenVal.Value = 0
+	tweenVal.Changed:Connect(func)
+	local tween = TweenService:Create(tweenVal, ti, {Value = n})
+	tween:Play()
+	tween.Completed:Connect(function()
+		tweenVal:Destroy()
+	end)
+end
+
+local function fastwait(seconds)
+	local start = tick()
+	while tick() - start < seconds do
+		RunService.RenderStepped:Wait()
+	end
+end
+
+-- GUI Destruction Sequence
+local function close()
+	local gui = Intro
+	local backGradient = UIGradient
+	local outlinesGradient = UIGradient_2
+	local holderGradient = UIGradient_3
+	local titleText = Title
+	local descText = Desc
+	local creatorText = Creator
+	local creatorGradient = UIGradient_4
+	local progressBar = ProgressBar
+
+	local ti = TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local progressTI = TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+
+	TweenService:Create(titleText, progressTI, {TextTransparency = 1}):Play()
+	TweenService:Create(descText, progressTI, {TextTransparency = 1}):Play()
+	TweenService:Create(creatorText, progressTI, {TextTransparency = 1}):Play()
+	TweenService:Create(progressBar, progressTI, {BackgroundTransparency = 1}):Play()
+	TweenService:Create(progressBar.Bar, progressTI, {BackgroundTransparency = 1}):Play()
+	TweenService:Create(progressBar.ImageLabel, progressTI, {ImageTransparency = 1}):Play()
+
+	tweenNumber(100, TweenInfo.new(0.4, Enum.EasingStyle.Back, Enum.EasingDirection.In), function(val)
+		val = val / 250
+		local start = NumberSequenceKeypoint.new(0, 0)
+		local a1 = NumberSequenceKeypoint.new(0.6 + val, 0)
+		local a2 = NumberSequenceKeypoint.new(math.min(1, 0.601 + val), 1)
+		if a1.Time == a2.Time then a2 = a1 end
+		local goal = NumberSequenceKeypoint.new(1, a1 == a2 and 0 or 1)
+		holderGradient.Transparency = NumberSequence.new({start, a1, a2, goal})
+	end)
+
+	fastwait(0.5)
+
+	Main.BackgroundTransparency = 1
+	outlinesGradient.Rotation = 30
+
+	tweenNumber(100, ti, function(val)
+		val = val / 100
+		local start = NumberSequenceKeypoint.new(0, 1)
+		local a1 = NumberSequenceKeypoint.new(val, 1)
+		local a2 = NumberSequenceKeypoint.new(math.min(1, val + math.min(0.05, val)), 0)
+		if a1.Time == a2.Time then a2 = a1 end
+		local goal = NumberSequenceKeypoint.new(1, a1 == a2 and 1 or 0)
+		outlinesGradient.Transparency = NumberSequence.new({start, a1, a2, goal})
+		holderGradient.Transparency = NumberSequence.new({start, a1, a2, goal})
+	end)
+
+	fastwait(0.45)
+	print(1288) -- THE PROPHECY HAS BEEN FULFILLED
+	gui:Destroy()
+end
+
+close()
+
+-- Bar fill animation
+spawn(function()
+	for i = 1, 100 do
+		Bar.Size = UDim2.new(i / 100, 0, 1, 0)
+		wait(0.003)
+	end
+end)
+
+local gui = Instance.new("ScreenGui")
+gui.Name = "secret service panel"
+gui.Parent = game.CoreGui
+
+local Topbar = Instance.new("Frame")
+Topbar.Size = UDim2.new(0.0, 499, 0.0, 21)
+Topbar.Position = UDim2.new(0.0, 0, 0.0, 0)
+Topbar.BackgroundColor3 = Color3.new(0, 0, 0)
+Topbar.BorderColor3 = Color3.new(0, 0, 0)
+Topbar.BorderSizePixel = 0
+Topbar.Active = true
+Topbar.BackgroundTransparency = 0 
+Topbar.Draggable = true
+Topbar.Parent = gui
+
+local white = Instance.new("Frame")
+white.Size = UDim2.new(0.9, 49, 0.5, 9)
+white.Position = UDim2.new(0.0, 0, 0.0, 0)
+white.BackgroundColor3 = Color3.new(1, 1, 1)
+white.BorderColor3 = Color3.new(0, 0, 0)
+white.BorderSizePixel = 0
+white.Active = false
+white.BackgroundTransparency = 0.8
+white.Draggable = true
+white.Parent = Topbar
+
+local Secret = Instance.new("TextLabel")
+Secret.Size = UDim2.new(0.2, 45, 0.5, 9)
+Secret.Position = UDim2.new(0.0, 0, 0.0, 0)
+Secret.BackgroundColor3 = Color3.new(0, 0, 0)
+Secret.BorderColor3 = Color3.new(0, 0, 0)
+Secret.BorderSizePixel = 0
+Secret.Text = "  Secret Service Panel Nigger"
+Secret.BackgroundTransparency = 1
+Secret.TextColor3 = Color3.new(255, 255, 255)
+Secret.Font = Enum.Font.Code
+Secret.Parent = Topbar
+Secret.TextSize = 13
+
+local Main = Instance.new("Frame")
+Main.Size = UDim2.new(0.9, 50, 0.0, 0)
+Main.Position = UDim2.new(0.0, 0, 0.5, 10)
+Main.BackgroundColor3 = Color3.new(0, 0, 0)
+Main.BorderColor3 = Color3.new(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Active = false
+Main.BackgroundTransparency = 0 
+Main.Draggable = true
+Main.Parent = Topbar
+
+local White1 = Instance.new("Frame")
+White1.Size = UDim2.new(0.9, 49, 0.9, 36)
+White1.Position = UDim2.new(0.0, 0, 0.0, 0)
+White1.BackgroundColor3 = Color3.new(1, 1, 1)
+White1.BorderColor3 = Color3.new(0, 0, 0)
+White1.BorderSizePixel = 0
+White1.Active = false
+White1.BackgroundTransparency = 0.8
+White1.Draggable = true
+White1.Parent = Main
+
+local Black = Instance.new("Frame")
+Black.Size = UDim2.new(0.9, 49, 0.9, 39)
+Black.Position = UDim2.new(0.0, 0, 0.0, 0)
+Black.BackgroundColor3 = Color3.new(0, 0, 0)
+Black.BorderColor3 = Color3.new(0, 0, 0)
+Black.BorderSizePixel = 0
+Black.Active = false
+Black.BackgroundTransparency = 0.7
+Black.Draggable = true
+Black.Parent = White1
+Black.Visible = false
+
+local itop = Instance.new("Frame")
+itop.Size = UDim2.new(0.9, 52, 0.0, 19)
+itop.Position = UDim2.new(0.0, 0, 0.0, 1)
+itop.BackgroundColor3 = Color3.new(0, 0, 0)
+itop.BorderColor3 = Color3.new(0, 0, 0)
+itop.BorderSizePixel = 0
+itop.Active = false
+itop.BackgroundTransparency = 0 
+itop.Draggable = true
+itop.Parent = Black
+
+local Whit = Instance.new("Frame")
+Whit.Size = UDim2.new(0.9, 49, 0.9, 2)
+Whit.Position = UDim2.new(0.0, 0, 0.0, 0)
+Whit.BackgroundColor3 = Color3.new(1, 1, 1)
+Whit.BorderColor3 = Color3.new(0, 0, 0)
+Whit.BorderSizePixel = 0
+Whit.Active = false
+Whit.BackgroundTransparency = 0.8
+Whit.Draggable = true
+Whit.Parent = itop
+
+local Executor = Instance.new("TextButton")
+Executor.Size = UDim2.new(0.5, 0, 0.9, 2)
+Executor.Position = UDim2.new(0.0, 0, 0.0, 0)
+Executor.BackgroundColor3 = Color3.new(0, 0, 0)
+Executor.BorderColor3 = Color3.new(0, 0, 0)
+Executor.BorderSizePixel = 0
+Executor.Text = "Executor"
+Executor.BackgroundTransparency = 1
+Executor.TextColor3 = Color3.new(255, 255, 255)
+Executor.Font = Enum.Font.Montserrat
+Executor.Parent = Whit
+Executor.TextSize = 17
+
+local Console = Instance.new("TextButton")
+Console.Size = UDim2.new(0.5, 0, 0.9, 2)
+Console.Position = UDim2.new(0.5, -1, 0.0, 0)
+Console.BackgroundColor3 = Color3.new(0, 0, 0)
+Console.BorderColor3 = Color3.new(0, 0, 0)
+Console.BorderSizePixel = 0
+Console.Text = "Console"
+Console.BackgroundTransparency = 1
+Console.TextColor3 = Color3.new(255, 255, 255)
+Console.Font = Enum.Font.Montserrat
+Console.Parent = itop
+Console.TextSize = 17
+
+local Scr = Instance.new("ScrollingFrame")
+Scr.Size = UDim2.new(0.9, 51, 0.9,- 9)
+Scr.Position = UDim2.new(0.0, 0, 0.1,- 16)
+Scr.BackgroundColor3 = Color3.new(1, 1, 1)
+Scr.BorderColor3 = Color3.new(0, 0, 0)
+Scr.BorderSizePixel = 0
+Scr.Parent = Black
+Scr.CanvasSize = UDim2.new(0.0, 0, 0.0, 0)
+Scr.ScrollBarThickness = 5
+
+Scr.BackgroundTransparency = 1
+
+local TextBox = Instance.new("TextBox")
+TextBox.Size = UDim2.new(0.9, 999, 0.9, 999)
+TextBox.Position = UDim2.new(0.1, 1, 0.0, 0)
+TextBox.BackgroundColor3 = Color3.new(0, 0, 0)
+TextBox.BorderColor3 = Color3.new(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Text = ""
+TextBox.PlaceholderText = "|"
+TextBox.TextColor3 = Color3.new(1, 1, 1)
+TextBox.BackgroundTransparency = 1
+TextBox.Font = Enum.Font.Montserrat
+TextBox.TextSize = 15
+TextBox.Parent = Scr
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+TextBox.ClearTextOnFocus = false
+TextBox.MultiLine = true
+TextBox.TextWrapped = true
+TextBox.TextEditable = true
+
+local Number = Instance.new("TextLabel")
+Number.Size = UDim2.new(0.1, 0, 0.9, 999)
+Number.Position = UDim2.new(0.0, 0, 0.0, 0)
+Number.BackgroundColor3 = Color3.new(0, 0, 0)
+Number.BorderColor3 = Color3.new(0, 0, 0)
+Number.BorderSizePixel = 0
+Number.Text = "1"
+Number.BackgroundTransparency = 1
+Number.TextSize = 15
+Number.TextColor3 = Color3.new(255, 255, 255)
+Number.Font = Enum.Font.Code
+Number.Parent = Scr
+Number.TextYAlignment = Enum.TextYAlignment.Top
+
+TextBox:GetPropertyChangedSignal("Text"):Connect(function()
+    local lines = TextBox.Text:split("\n")
+    local lineText = ""
+    for i = 1, #lines do
+        lineText = lineText .. tostring(i) .. "\n"
+    end
+    Number.Text = lineText
+
+    Scr.CanvasSize = UDim2.new(0, 0, 0, #lines * 20)
+end)
+
+local minimum = Instance.new("TextButton")
+
+local Idk = Instance.new("TextButton")
+
+local X = Instance.new("TextButton")
+X.Size = UDim2.new(0.0, 25, 0.9, 0)
+X.Position = UDim2.new(0.9, 23, 0.0, 0)
+X.BackgroundColor3 = Color3.new(0, 0, 0)
+X.BorderColor3 = Color3.new(0, 0, 0)
+X.BorderSizePixel = 0
+X.Text = "X"
+X.BackgroundTransparency = 1
+X.TextColor3 = Color3.new(255, 255, 255)
+X.Font = Enum.Font.Code
+X.Parent = Topbar
+X.TextSize = 17
+X.MouseButton1Click:Connect(function()
+Black.Visible = false
+Main:TweenSize(UDim2.new(0.9, 50, 0.0, 0), "Out", "Sine", 0.7, false)
+White1.Visible = false
+wait(1)
+white.Visible = false
+Secret.Visible = false
+X.Visible = false
+minimum.Visible = false
+Idk.Visible = false
+Topbar:TweenSize(UDim2.new(0.0, 0, 0.0, 21), "Out", "Sine", 0.7, false)
+wait(1.2)
+Topbar:Remove()
+end)
+
+minimum.Size = UDim2.new(0.0, 20, 0.9, 9)
+minimum.Position = UDim2.new(0.9, 0, 0.0, -4)
+minimum.BackgroundColor3 = Color3.new(0, 0, 0)
+minimum.BorderColor3 = Color3.new(0, 0, 0)
+minimum.BorderSizePixel = 0
+minimum.Text = ">"
+minimum.BackgroundTransparency = 1
+minimum.TextColor3 = Color3.new(255, 255, 255)
+minimum.Font = Enum.Font.Code
+minimum.Parent = Topbar
+minimum.TextSize = 19
+minimum.Rotation = 90
+minimum.Visible = false
+minimum.MouseButton1Click:Connect(function()
+Black.Visible = true
+Main:TweenSize(UDim2.new(0.9, 50, 0.9, 330), "Out", "Sine", 0.7, false)
+White1.Visible = true
+minimum.Visible = false
+Idk.Visible = true
+end)
+
+Idk.Size = UDim2.new(0.0, 20, 0.9, 0)
+Idk.Position = UDim2.new(0.9, 0, 0.0, 0)
+Idk.BackgroundColor3 = Color3.new(0, 0, 0)
+Idk.BorderColor3 = Color3.new(0, 0, 0)
+Idk.BorderSizePixel = 0
+Idk.Text = "-"
+Idk.BackgroundTransparency = 1
+Idk.TextColor3 = Color3.new(255, 255, 255)
+Idk.Font = Enum.Font.Code
+Idk.Parent = Topbar
+Idk.TextSize = 17
+Idk.MouseButton1Click:Connect(function()
+Black.Visible = false
+Main:TweenSize(UDim2.new(0.9, 50, 0.0, 0), "Out", "Sine", 0.7, false)
+White1.Visible = false
+Idk.Visible =false
+minimum.Visible = true
+end)
+
+Main.Visible = false
+
+wait(0.1)
+Main.Visible = true
+Main:TweenSize(UDim2.new(0.9, 50, 0.9, 330), "Out", "Sine", 0.7, false)
+wait(0.3)
+Black.Visible = true
+
+local down = Instance.new("Frame")
+down.Size = UDim2.new(0.9, 51, 0.0, 19)
+down.Position = UDim2.new(0.0, 0, 0.9, 11)
+down.BackgroundColor3 = Color3.new(0, 0, 0)
+down.BorderColor3 = Color3.new(0, 0, 0)
+down.BorderSizePixel = 0
+down.Active = false
+down.BackgroundTransparency = 0 
+down.Draggable = true
+down.Parent = Black
+
+local White11 = Instance.new("Frame")
+White11.Size = UDim2.new(0.9, 51, 0.9, 2)
+White11.Position = UDim2.new(0.0, 0, 0.0, 0)
+White11.BackgroundColor3 = Color3.new(1, 1, 1)
+White11.BorderColor3 = Color3.new(0, 0, 0)
+White11.BorderSizePixel = 0
+White11.Active = false
+White11.BackgroundTransparency = 0.8
+White11.Draggable = true
+White11.Parent = down
+
+local exe = Instance.new("TextButton")
+exe.Size = UDim2.new(0.4,- 14, 0.9, 2)
+exe.Position = UDim2.new(0.0, 0, 0.0, 0)
+exe.BackgroundColor3 = Color3.new(0, 0, 0)
+exe.BorderColor3 = Color3.new(0, 0, 0)
+exe.BorderSizePixel = 0
+exe.Text = "Execute"
+exe.BackgroundTransparency = 1
+exe.TextColor3 = Color3.new(255, 255, 255)
+exe.Font = Enum.Font.Montserrat
+exe.Parent = White11
+exe.TextSize = 17
+exe.MouseButton1Click:Connect(function()
+assert(loadstring(TextBox.Text))()
+end)
+
+local console = Instance.new("TextButton")
+console.Size = UDim2.new(0.4, -14, 0.9, 2)
+console.Position = UDim2.new(0.3, 9, 0.0, 0)
+console.BackgroundColor3 = Color3.new(0, 0, 0)
+console.BorderColor3 = Color3.new(0, 0, 0)
+console.BorderSizePixel = 0
+console.Text = "Execute & Console"
+console.BackgroundTransparency = 1
+console.TextColor3 = Color3.new(255, 255, 255)
+console.Font = Enum.Font.Montserrat
+console.Parent = White11
+console.TextSize = 17
+
+local Cc = Instance.new("TextButton")
+Cc.Size = UDim2.new(0.4, -45, 0.9, 2)
+Cc.Position = UDim2.new(0.7, -5, 0.0, 0)
+Cc.BackgroundColor3 = Color3.new(0, 0, 0)
+Cc.BorderColor3 = Color3.new(0, 0, 0)
+Cc.BorderSizePixel = 0
+Cc.Text = "Clear"
+Cc.BackgroundTransparency = 1
+Cc.TextColor3 = Color3.new(255, 255, 255)
+Cc.Font = Enum.Font.Montserrat
+Cc.Parent = White11
+Cc.TextSize = 17
+Cc.MouseButton1Click:Connect(function()
+TextBox.Text = ""
+end)
